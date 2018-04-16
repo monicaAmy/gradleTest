@@ -1,4 +1,4 @@
-package com.thread;
+package com.thread.synchronize;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

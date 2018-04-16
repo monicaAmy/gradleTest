@@ -1,4 +1,4 @@
-package com.thread;
+package com.thread.synchronize;
 
 /**
  * 类锁

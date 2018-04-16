@@ -2,7 +2,7 @@ package com.io;
 
 import java.io.InputStream;
 import java.util.Properties;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 
 /** 

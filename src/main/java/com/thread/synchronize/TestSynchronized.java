@@ -1,4 +1,4 @@
-package com.thread;
+package com.thread.synchronize;
 
 /**
  * 对象锁,与调用者无关,与方法本身是类锁还是对象锁有关

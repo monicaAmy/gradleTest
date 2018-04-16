@@ -3,8 +3,12 @@ package com.thread;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.concurrent.*;
-import org.junit.jupiter.api.Test;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.Executors;
+import java.util.concurrent.RejectedExecutionHandler;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import org.junit.Test;
 
 /**
  * JDK Executor 在java.util.concurrent中
