@@ -17,6 +17,7 @@ public class TestSynchronized3
       }
       catch (InterruptedException ie)
       {
+        ie.printStackTrace();
       }
     }
   }
@@ -33,6 +34,7 @@ public class TestSynchronized3
       }
       catch (InterruptedException ie)
       {
+        ie.printStackTrace();
       }
     }
   }
