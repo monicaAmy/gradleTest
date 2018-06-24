@@ -1,0 +1,20 @@
+Java HotSpot(TM) 64-Bit Server VM (25.144-b01) for windows-amd64 JRE (1.8.0_144-b01), built on Jul 21 2017 21:57:33 by "java_re" with MS VC++ 10.0 (VS2010)
+Memory: 4k page, physical 8195272k(3577504k free), swap 9505992k(3329468k free)
+CommandLine flags: -XX:InitialHeapSize=131124352 -XX:MaxHeapSize=2097989632 -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC 
+Heap
+ PSYoungGen      total 37888K, used 9185K [0x00000000d6500000, 0x00000000d8f00000, 0x0000000100000000)
+  eden space 32768K, 28% used [0x00000000d6500000,0x00000000d6df8478,0x00000000d8500000)
+  from space 5120K, 0% used [0x00000000d8a00000,0x00000000d8a00000,0x00000000d8f00000)
+  to   space 5120K, 0% used [0x00000000d8500000,0x00000000d8500000,0x00000000d8a00000)
+ ParOldGen       total 86016K, used 0K [0x0000000082e00000, 0x0000000088200000, 0x00000000d6500000)
+  object space 86016K, 0% used [0x0000000082e00000,0x0000000082e00000,0x0000000088200000)
+ Metaspace       used 4642K, capacity 4800K, committed 4992K, reserved 1056768K
+  class space    used 524K, capacity 560K, committed 640K, reserved 1048576K
+
+
+PSYoungGen、ParOldGen、PSPermGen 属于Parallel收集器。
+其中PSYoungGen表示gc回收前后年轻代的内存变化；
+ParOldGen表示gc回收前后老年代的内存变化；
+PSPermGen表示gc回收前后永久区的内存变化。
+young gc 主要是针对年轻代进行内存回收比较频繁，耗时短；
+full gc 会对整个堆内存进行回城，耗时长，因此一般尽量减少full gc的次数
