@@ -33,8 +33,9 @@ repositories {
 
 dependencies {
     kotlinModule("stdlib-jdk8", kotlin_version)
-    testCompile ("junit", "junit", "4.12")
-
+    compile ("junit", "junit", "4.12")
+    compile( "com.lmax", "disruptor", "3.4.2")
+    compile ("com.rabbitmq", "amqp-client", "5.2.0")
 }
 
 configure<JavaPluginConvention> {
