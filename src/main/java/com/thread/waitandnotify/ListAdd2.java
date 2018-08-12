@@ -79,7 +79,7 @@ public class ListAdd2
             e.printStackTrace();
           }
 
-          throw new RuntimeException();
+//          throw new RuntimeException();
         }
       }
     }, "t2");

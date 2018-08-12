@@ -36,6 +36,7 @@ dependencies {
     compile ("junit", "junit", "4.12")
     compile( "com.lmax", "disruptor", "3.4.2")
     compile ("com.rabbitmq", "amqp-client", "5.2.0")
+    compile("cglib", "cglib", "3.2.7")
 }
 
 configure<JavaPluginConvention> {

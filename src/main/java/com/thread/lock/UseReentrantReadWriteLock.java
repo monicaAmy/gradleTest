@@ -49,14 +49,14 @@ public class UseReentrantReadWriteLock
       }
     }, "t4");
 
-//		t1.start();
-//		t2.start();
+    t1.start();
+    t2.start();
 
-//		t1.start(); // R
-//		t3.start(); // W
+    t4.start(); // R
+    t3.start(); // W
 
-    t3.start();
-    t4.start();
+//    t3.start();
+//    t4.start();
 
 
   }
