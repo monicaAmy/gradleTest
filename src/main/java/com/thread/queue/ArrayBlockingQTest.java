@@ -45,9 +45,12 @@ public class ArrayBlockingQTest
     objects.offer("c");
     objects.offer("d");
     objects.offer("e");
+
     List<String> strings = new ArrayList<String>();
     System.out.println(objects.drainTo(strings, 3));
-    strings.forEach(x-> System.out.println(x));
+
+    strings.forEach(x-> System.out.println("----"+x));
+
     //传入对象实现Comparable接口,利用Compator来决定优先级,内部是公平锁,无界队列
     PriorityBlockingQueue<Object> objects1 = new PriorityBlockingQueue<>();
     //传入对象必须实现Delayed接口,到了指定的延时时间才能从队列中获取元素

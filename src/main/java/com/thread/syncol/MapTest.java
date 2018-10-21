@@ -8,6 +8,19 @@ import java.util.concurrent.ConcurrentHashMap;
  * 代码中使用volatile声明,目的是第一时间获取修改的内容,性能比较好
  * CopyOnWrite
  * 复制副本修改,引用指向新容器,支持并发,不需要加锁,实现了读写分离,读多写少场景
+ *
+ *ConcurrentHashMap:线程安全的HashMap的实现
+ *
+ * CopyOnWriteArrayList:线程安全且在读操作时无锁的ArrayList
+ *
+ * CopyOnWriteArraySet:基于CopyOnWriteArrayList 不添加重复元素
+ *
+ * ArrayBlockingQueue:基于数组 先进先出 线程安全 可实现指定时间的拥塞读写
+ *
+ * LinkedBlockingQueue:基于链表实现 读写各用一把锁 在高并发读写操作都多的情况下使用 性能优于ArrayBlockingQueue
+ *
+ *
+ *
  * NieSu 2018/4/22
  */
 public class MapTest

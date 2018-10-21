@@ -37,6 +37,7 @@ dependencies {
     compile( "com.lmax", "disruptor", "3.4.2")
     compile ("com.rabbitmq", "amqp-client", "5.2.0")
     compile("cglib", "cglib", "3.2.7")
+    compile("org.projectlombok", "lombok", "1.18.2")
 }
 
 configure<JavaPluginConvention> {

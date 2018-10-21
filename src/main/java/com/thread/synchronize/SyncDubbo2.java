@@ -16,7 +16,6 @@ public class SyncDubbo2
 
   static class Parent
   {
-
     public synchronized void parentMethod()
     {
       System.out.println("线程安全的");

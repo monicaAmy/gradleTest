@@ -14,13 +14,14 @@ public class LinkedQueueTest
   public static void main(String[] args)
   {
     ConcurrentLinkedQueue queue = new ConcurrentLinkedQueue();
-   //两个添加方法没有区别
+   //两个添加方法没有区别, offer queue满了在调用添加不会报错
     queue.add("ddd");
     queue.offer("hah");
     //取头并删除
     System.out.println(queue.poll());
     //取头
     System.out.println(queue.peek());
+
     System.out.println(queue.size());
   }
 }

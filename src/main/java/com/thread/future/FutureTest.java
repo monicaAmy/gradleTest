@@ -1,6 +1,7 @@
 package com.thread.future;
 
 /**
+ * FutureTask:用于异步获取执行结果或者取消执行任务的场景 基于CAS 避免锁的引用
  * NieSu 2018/5/1
  */
 public class FutureTest

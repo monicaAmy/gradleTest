@@ -1,5 +1,7 @@
 package com.ztest;
 
+import org.junit.Test;
+
 /**
  * NieSu 2018/8/12
  */
@@ -7,7 +9,7 @@ public class AspectUtil
 {
 
   //采用cglib动态代理生成代理子对象,基于类的
- // @Test
+  @Test
   public void testCglibProxy(){
     //确定目标
     ReadAndWrite target = new ReadAndWrite();

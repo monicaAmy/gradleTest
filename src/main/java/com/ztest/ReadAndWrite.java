@@ -18,6 +18,8 @@ public class ReadAndWrite
 
   public static final String FILE_FORMAT = "UTF-8";
 
+
+
   public static void main(String[] args)
   {
     for (int i = 0; i < 100; i++)
