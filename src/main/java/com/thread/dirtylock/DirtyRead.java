@@ -1,4 +1,4 @@
-package com.thread;
+package com.thread.dirtylock;
 
 /**
  * clientA查询数据为100的数需10分钟,clientB修改为200需5min
