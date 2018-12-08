@@ -38,6 +38,7 @@ dependencies {
     compile ("com.rabbitmq", "amqp-client", "5.2.0")
     compile("cglib", "cglib", "3.2.7")
     compile("org.projectlombok", "lombok", "1.18.2")
+    compile("org.apache.httpcomponents", "httpasyncclient", "4.1.4")
 }
 
 configure<JavaPluginConvention> {
