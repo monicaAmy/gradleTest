@@ -3,7 +3,7 @@ package com.httpleak;
 import java.util.List;
 
 /**
- * @author NieSu
+ * @author
  */
 public class ReplayApplication
 {

@@ -1,0 +1,237 @@
+Classfile /G:/code/DemoGradle/out/production/classes/com/jvm/Client.class
+  Last modified 2018��12��15��; size 1859 bytes
+  MD5 checksum 260a45d7825bb1d872a6af928def1f95
+  Compiled from "Client.java"
+public class com.jvm.Client
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #26                         // com/jvm/Client
+  super_class: #27                        // java/lang/ObjectF
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+    #1 = Methodref          #27.#56       // java/lang/Object."<init>":()V
+    #2 = Class              #57           // com/jvm/MyClassLoader
+    #3 = String             #58           // MyClassLoader
+    #4 = Methodref          #2.#59        // com/jvm/MyClassLoader."<init>":(Ljava/lang/String;)V
+    #5 = String             #60           // G:\\code\\cookieTest\\common\\target\\classes\\
+    #6 = Methodref          #2.#61        // com/jvm/MyClassLoader.setPath:(Ljava/lang/String;)V
+    #7 = String             #62           // Test
+    #8 = Methodref          #2.#63        // com/jvm/MyClassLoader.loadClass:(Ljava/lang/String;)Ljava/lang/Class;
+    #9 = Methodref          #64.#65       // java/lang/Class.getFields:()[Ljava/lang/reflect/Field;
+   #10 = Methodref          #64.#66       // java/lang/Class.getMethods:()[Ljava/lang/reflect/Method;
+   #11 = Fieldref           #67.#68       // java/lang/System.out:Ljava/io/PrintStream;
+   #12 = Class              #69           // java/lang/StringBuilder
+   #13 = Methodref          #12.#56       // java/lang/StringBuilder."<init>":()V
+   #14 = String             #70           // ������������Ϊ��
+   #15 = Methodref          #12.#71       // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #16 = Methodref          #64.#72       // java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+   #17 = Methodref          #12.#73       // java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   #18 = Methodref          #12.#74       // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #19 = Methodref          #75.#76       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #20 = String             #77           // �������������ĸ���Ϊ:
+   #21 = Methodref          #78.#79       // java/lang/ClassLoader.getParent:()Ljava/lang/ClassLoader;
+   #22 = String             #80           // ���������Ϊ��
+   #23 = Methodref          #64.#81       // java/lang/Class.getName:()Ljava/lang/String;
+   #24 = Class              #82           // java/lang/ClassNotFoundException
+   #25 = Methodref          #24.#83       // java/lang/ClassNotFoundException.printStackTrace:()V
+   #26 = Class              #84           // com/jvm/Client
+   #27 = Class              #85           // java/lang/Object
+   #28 = Utf8               <init>
+   #29 = Utf8               ()V
+   #30 = Utf8               Code
+   #31 = Utf8               LineNumberTable
+   #32 = Utf8               LocalVariableTable
+   #33 = Utf8               this
+   #34 = Utf8               Lcom/jvm/Client;
+   #35 = Utf8               fn
+   #36 = Utf8               filed
+   #37 = Utf8               [Ljava/lang/reflect/Field;
+   #38 = Utf8               methods
+   #39 = Utf8               [Ljava/lang/reflect/Method;
+   #40 = Utf8               clazz
+   #41 = Utf8               Ljava/lang/Class;
+   #42 = Utf8               e
+   #43 = Utf8               Ljava/lang/ClassNotFoundException;
+   #44 = Utf8               myCLoader
+   #45 = Utf8               Lcom/jvm/MyClassLoader;
+   #46 = Utf8               LocalVariableTypeTable
+   #47 = Utf8               Ljava/lang/Class<*>;
+   #48 = Utf8               StackMapTable
+   #49 = Class              #84           // com/jvm/Client
+   #50 = Class              #57           // com/jvm/MyClassLoader
+   #51 = Class              #82           // java/lang/ClassNotFoundException
+   #52 = Utf8               RuntimeVisibleAnnotations
+   #53 = Utf8               Lorg/junit/Test;
+   #54 = Utf8               SourceFile
+   #55 = Utf8               Client.java
+   #56 = NameAndType        #28:#29       // "<init>":()V
+   #57 = Utf8               com/jvm/MyClassLoader
+   #58 = Utf8               MyClassLoader
+   #59 = NameAndType        #28:#86       // "<init>":(Ljava/lang/String;)V
+   #60 = Utf8               G:\\code\\cookieTest\\common\\target\\classes\\
+   #61 = NameAndType        #87:#86       // setPath:(Ljava/lang/String;)V
+   #62 = Utf8               Test
+   #63 = NameAndType        #88:#89       // loadClass:(Ljava/lang/String;)Ljava/lang/Class;
+   #64 = Class              #90           // java/lang/Class
+   #65 = NameAndType        #91:#92       // getFields:()[Ljava/lang/reflect/Field;
+   #66 = NameAndType        #93:#94       // getMethods:()[Ljava/lang/reflect/Method;
+   #67 = Class              #95           // java/lang/System
+   #68 = NameAndType        #96:#97       // out:Ljava/io/PrintStream;
+   #69 = Utf8               java/lang/StringBuilder
+   #70 = Utf8               ������������Ϊ��
+   #71 = NameAndType        #98:#99       // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #72 = NameAndType        #100:#101     // getClassLoader:()Ljava/lang/ClassLoader;
+   #73 = NameAndType        #98:#102      // append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+   #74 = NameAndType        #103:#104     // toString:()Ljava/lang/String;
+   #75 = Class              #105          // java/io/PrintStream
+   #76 = NameAndType        #106:#86      // println:(Ljava/lang/String;)V
+   #77 = Utf8               �������������ĸ���Ϊ:
+   #78 = Class              #107          // java/lang/ClassLoader
+   #79 = NameAndType        #108:#101     // getParent:()Ljava/lang/ClassLoader;
+   #80 = Utf8               ���������Ϊ��
+   #81 = NameAndType        #109:#104     // getName:()Ljava/lang/String;
+   #82 = Utf8               java/lang/ClassNotFoundException
+   #83 = NameAndType        #110:#29      // printStackTrace:()V
+   #84 = Utf8               com/jvm/Client
+   #85 = Utf8               java/lang/Object
+   #86 = Utf8               (Ljava/lang/String;)V
+   #87 = Utf8               setPath
+   #88 = Utf8               loadClass
+   #89 = Utf8               (Ljava/lang/String;)Ljava/lang/Class;
+   #90 = Utf8               java/lang/Class
+   #91 = Utf8               getFields
+   #92 = Utf8               ()[Ljava/lang/reflect/Field;
+   #93 = Utf8               getMethods
+   #94 = Utf8               ()[Ljava/lang/reflect/Method;
+   #95 = Utf8               java/lang/System
+   #96 = Utf8               out
+   #97 = Utf8               Ljava/io/PrintStream;
+   #98 = Utf8               append
+   #99 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #100 = Utf8               getClassLoader
+  #101 = Utf8               ()Ljava/lang/ClassLoader;
+  #102 = Utf8               (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  #103 = Utf8               toString
+  #104 = Utf8               ()Ljava/lang/String;
+  #105 = Utf8               java/io/PrintStream
+  #106 = Utf8               println
+  #107 = Utf8               java/lang/ClassLoader
+  #108 = Utf8               getParent
+  #109 = Utf8               getName
+  #110 = Utf8               printStackTrace
+{
+  public com.jvm.Client();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1(操作数栈大小), locals=1(局部变量分配空间), args_size=1(方法参数个数,包含方法参数this,this只针对实例方法,static方法不自动添加this)
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/jvm/Client;
+
+  public void fn();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=5, args_size=1
+         0: new           #2(新建一个MyClassLoader空间)                  // class com/jvm/MyClassLoader
+         3: dup(复制MyClassLoader空间的引用并压入栈顶)
+         4: ldc     (从常量池取值压入栈)      #3                  // String MyClassLoader
+         6: invokespecial #4                  // Method com/jvm/MyClassLoader."<init>":(Ljava/lang/String;)V
+         9: astore_1 将此时栈顶值弹出存入局部变量
+        10: aload_1  将本地变量弹出存入操作数栈
+        11: ldc           #5                  // String G:\\code\\cookieTest\\common\\target\\classes\\
+        13: invokevirtual #6 (调用MyClassLoader的setPath方法)                 // Method com/jvm/MyClassLoader.setPath:(Ljava/lang/String;)V
+        16: aload_1(将本地变量弹出存入操作数栈)
+        17: ldc           #7                  // String Test
+        19: invokevirtual #8                  // Method com/jvm/MyClassLoader.loadClass:(Ljava/lang/String;)Ljava/lang/Class;
+        22: astore_2
+        23: aload_2
+        24: invokevirtual #9                  // Method java/lang/Class.getFields:()[Ljava/lang/reflect/Field;
+        27: astore_3
+        28: aload_2
+        29: invokevirtual #10                 // Method java/lang/Class.getMethods:()[Ljava/lang/reflect/Method;
+        32: astore        4
+        34: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        37: new           #12                 // class java/lang/StringBuilder
+        40: dup
+        41: invokespecial #13                 // Method java/lang/StringBuilder."<init>":()V
+        44: ldc           #14                 // String ������������Ϊ��
+        46: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        49: aload_2
+        50: invokevirtual #16                 // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+        53: invokevirtual #17                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        56: invokevirtual #18                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        59: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        62: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        65: new           #12                 // class java/lang/StringBuilder
+        68: dup
+        69: invokespecial #13                 // Method java/lang/StringBuilder."<init>":()V
+        72: ldc           #20                 // String �������������ĸ���Ϊ:
+        74: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        77: aload_2
+        78: invokevirtual #16                 // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+        81: invokevirtual #21                 // Method java/lang/ClassLoader.getParent:()Ljava/lang/ClassLoader;
+        84: invokevirtual #17                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        87: invokevirtual #18                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        90: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        93: getstatic     #11                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        96: new           #12                 // class java/lang/StringBuilder
+        99: dup
+       100: invokespecial #13                 // Method java/lang/StringBuilder."<init>":()V
+       103: ldc           #22                 // String ���������Ϊ��
+       105: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       108: aload_2
+       109: invokevirtual #23                 // Method java/lang/Class.getName:()Ljava/lang/String;
+       112: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       115: invokevirtual #18                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       118: invokevirtual #19                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       121: goto          129
+       124: astore_3
+       125: aload_3
+       126: invokevirtual #25                 // Method java/lang/ClassNotFoundException.printStackTrace:()V
+       129: return
+      Exception table:
+         from    to  target type
+            16   121   124   Class java/lang/ClassNotFoundException
+      LineNumberTable:
+        line 14: 0
+        line 17: 10
+        line 21: 16
+        line 23: 23
+        line 25: 28
+        line 26: 34
+        line 27: 62
+        line 28: 93
+        line 33: 121
+        line 30: 124
+        line 32: 125
+        line 34: 129
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           28      93     3 filed   [Ljava/lang/reflect/Field;
+           34      87     4 methods   [Ljava/lang/reflect/Method;
+           23     101     2 clazz   Ljava/lang/Class;
+          125       4     3     e   Ljava/lang/ClassNotFoundException;
+            0     130     0  this   Lcom/jvm/Client;
+           10     120     1 myCLoader   Lcom/jvm/MyClassLoader;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           23     101     2 clazz   Ljava/lang/Class<*>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 124
+          locals = [ class com/jvm/Client, class com/jvm/MyClassLoader ]
+          stack = [ class java/lang/ClassNotFoundException ]
+        frame_type = 4 /* same */
+    RuntimeVisibleAnnotations:
+      0: #53()
+        org.junit.Test
+}
+SourceFile: "Client.java"
