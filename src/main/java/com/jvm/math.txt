@@ -1,0 +1,50 @@
+Compiled from "Math.java"
+public class com.jvm.Math {
+  public static final java.lang.Integer CONSTANT_1;
+
+  public static java.lang.Object object;
+
+  public com.jvm.Math();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: new           #2                  // class com/jvm/Math
+       3: dup
+       4: invokespecial #3                  // Method "<init>":()V
+       7: astore_1
+       8: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      11: aload_1
+      12: invokevirtual #5                  // Method math:()I
+      15: invokevirtual #6                  // Method java/io/PrintStream.println:(I)V
+      18: return
+
+  public int math();
+    Code:
+       0: iconst_1   将int型1推送至栈顶
+       1: istore_1   将栈顶int型数值存入第二个本地变量
+       2: iconst_2   将int型2推送至栈顶
+       3: istore_2   将栈顶int型数值存入第三个本地变量
+       4: iload_1    将第二个int型本地变量推送至栈顶
+       5: iload_2    将第三个int型本地变量推送至栈顶
+       6: iadd
+       7: bipush        10
+       9: imul
+      10: istore_3   将栈顶int型数值存入第四个本地变量
+      11: iload_3
+      12: ireturn
+
+  static {};
+    Code:
+       0: sipush        666
+       3: invokestatic  #7                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       6: putstatic     #8                  // Field CONSTANT_1:Ljava/lang/Integer;
+       9: new           #9                  // class java/lang/Object
+      12: dup
+      13: invokespecial #1                  // Method java/lang/Object."<init>":()V
+      16: putstatic     #10                 // Field object:Ljava/lang/Object;
+      19: return
+}

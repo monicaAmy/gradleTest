@@ -3,6 +3,11 @@ package com.httpleak;
 import java.util.List;
 
 /**
+ *GC后回收的力度越来越小，则说明很有可能存在内存泄漏，这时需要开启该视图的Memory Views视图的Recorded Objects子视图
+ *
+ * 通过占用时间的不同，找出系统里最耗时的类方法进行调优解决问题
+ *
+ * Java虚拟机工作原理 - best.lei - 博客园.html
  * @author
  */
 public class ReplayApplication

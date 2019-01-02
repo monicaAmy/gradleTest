@@ -11,7 +11,10 @@ import java.util.concurrent.ConcurrentHashMap;
  *
  *ConcurrentHashMap:线程安全的HashMap的实现
  *
- * CopyOnWriteArrayList:线程安全且在读操作时无锁的ArrayList
+ * CopyOnWriteArrayList:线程安全且在读操作时无锁的ArrayList,写操作先复制,在副本上操作,之后将原数据的引用指向新数据
+ * 适合读多写少的场景,缺点耗内存,无法保证数据一致性
+ * Vector对于读写操作均加锁同步，可以保证读和写的强一致性。
+ *
  *
  * CopyOnWriteArraySet:基于CopyOnWriteArrayList 不添加重复元素
  *
