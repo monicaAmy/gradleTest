@@ -14,7 +14,7 @@ public class Runthread extends Thread
    * 加上,主线程变量改变,子线程也变
    * 不加,主线程改变,不影响子线程,子线程会一直执行 ????
    */
-  private   boolean isRunning=true;
+  private volatile boolean isRunning = true;
 
   public void setIsRunning(boolean isRunning)
   {
