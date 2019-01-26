@@ -21,7 +21,7 @@ public class StopExample
 
   //boolean stop = false;
   //加上volatile,把stop放入到内存中,线程之间变量共享
-  volatile boolean stop = false;
+  boolean stop = false;
 
   /**
    * 运行之后,无法停机,线程之间变量没有共享 两个线程之间的各自持有自己的副本,副本数据没有写到主内存中,线程数据不共享 加上volatile把数据放到主内存中,两个线程都可以读取主内存中的数据
