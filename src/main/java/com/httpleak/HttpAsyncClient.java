@@ -1,16 +1,18 @@
 package com.httpleak;
 
-import java.io.IOException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.concurrent.FutureCallback;
 import org.apache.http.impl.nio.client.CloseableHttpAsyncClient;
 import org.apache.http.impl.nio.client.HttpAsyncClients;
 
+import java.io.IOException;
+
 public class HttpAsyncClient
 {
 
-  private CloseableHttpAsyncClient httpclient;
+
+    private CloseableHttpAsyncClient httpclient;
 
   public HttpAsyncClient()
   {

@@ -1,27 +1,27 @@
-import jdk.nashorn.internal.objects.NativeFunction.apply
-import org.jetbrains.kotlin.gradle.dsl.KotlinCompile
-import sun.security.pkcs.PKCS8Key.version
+plugins {
+    java
+}
 
 group = "com.su"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    var kotlin_version: String by extra
-    kotlin_version = "1.2.10"
+    //    var kotlin_version: String by extra
+//    kotlin_version = "1.2.10"
 
     repositories {
         mavenCentral()
     }
 
     dependencies {
-        classpath(kotlinModule("gradle-plugin", kotlin_version))
+        // classpath(kotlinModule("gradle-plugin", kotlin_version))
     }
-    
+
 }
 
 apply {
     plugin("java")
-    plugin("kotlin")
+    // plugin("kotlin")
     plugin("idea")
 }
 
@@ -32,12 +32,13 @@ repositories {
 }
 
 dependencies {
-    kotlinModule("stdlib-jdk8", kotlin_version)
+    //  kotlinModule("stdlib-jdk8", kotlin_version)
     compile ("junit", "junit", "4.12")
     compile( "com.lmax", "disruptor", "3.4.2")
     compile ("com.rabbitmq", "amqp-client", "5.2.0")
     compile("cglib", "cglib", "3.2.7")
-    compile("org.projectlombok", "lombok", "1.18.2")
+    annotationProcessor("org.projectlombok", "lombok", "1.18.2")
+    compileOnly("org.projectlombok", "lombok", "1.18.2")
     compile("org.apache.httpcomponents", "httpasyncclient", "4.1.4")
 }
 
@@ -48,3 +49,6 @@ configure<JavaPluginConvention> {
 //    kotlinOptions.jvmTarget = "1.8"
 //}
 
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}

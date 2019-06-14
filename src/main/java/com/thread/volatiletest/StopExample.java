@@ -6,7 +6,7 @@ package com.thread.volatiletest;
  * 不同的线程有不同的线程工作内存, 不同线程工作内存指向同一块主内存 thread1和thread2在各自的工作内存中都保留一个object副本
  * thread1和thread2引用同一个变量,这个变量同步到主内存的时候,两个线程之间的指向的引用数据就一致 引用不同的变量,同步到主存,也是不同的变量,两个线程之间数据不一样
  *
- * ??? 不加volatile就不同步到主存了吗?
+ *   不加volatile也会到主存，需要时间
  *
  * 电脑一般有多个CPU寄存器(每个CPU都有自己的缓存-高速缓存),内存,磁盘 单核CPU CPU→cache→(bus总线)→主内存 多核,
  * CPU(L1I,L1D),CPU(L1I,L1D→L2 cache(多个)→ L3 cache →(多条bus总线)→主内存 总线上有嗅探机制,保证在主内存数据一致性
@@ -34,20 +34,29 @@ public class StopExample
       stopExample.doWork();
     }).start();
 
-    //Thread.sleep(2000);
+    //???加上之后不用volatile 就一直停止不了 ， 打印不同的是主线程是否打印完了 ？？
+    Thread.sleep(2000);
     new Thread(() ->
     {
       stopExample.shutDown();
     }).start();
+
+    System.out.println("main  ....");
+
   }
 
   public void shutDown()
   {
+    System.out.println("shutdown" + stop);
+    System.out.println("shutdown true....");
     stop = true;
   }
 
   public void doWork()
   {
+    System.out.println("doWor...." + stop);
+    System.out.println("doWor....");
+
     while (!stop)
     {
 
