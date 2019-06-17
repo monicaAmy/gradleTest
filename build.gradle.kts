@@ -40,6 +40,7 @@ dependencies {
     annotationProcessor("org.projectlombok", "lombok", "1.18.2")
     compileOnly("org.projectlombok", "lombok", "1.18.2")
     compile("org.apache.httpcomponents", "httpasyncclient", "4.1.4")
+    compile("cglib", "cglib", "3.2.12")
 }
 
 configure<JavaPluginConvention> {

@@ -35,7 +35,7 @@ public class StopExample
     }).start();
 
     //???加上之后不用volatile 就一直停止不了 ， 打印不同的是主线程是否打印完了 ？？
-    Thread.sleep(2000);
+      // Thread.sleep(2000);
     new Thread(() ->
     {
       stopExample.shutDown();
