@@ -43,3 +43,12 @@ class space    used 348K, capacity 388K, committed 512K, reserved 1048576K*/
 //survivor（from,to）+eden=年轻代大小
 //年轻代+老年代=heap区大小
 //GC次数越少，GC实践越短，每次GC峰值图像一致
+
+//perm永久代 1.8之后Metaspace代替
+
+//日志最开始的GC和Full GC表示垃圾回收的停顿类型;
+//PSYoungGen中最前面的PS代表垃圾收集器是Parallel Scavenge收集器,回收的区域是新生代(YoungGen)
+//ParOldGen中最前面的Par代表垃圾收集器是Parallel Old收集器,回收的区域是老年代(OldGen).
+//方括号内的9216K->1024K(9216K)中9表示GC前该内存区域使用容量->GC后该内存区域已使用容量(该内存区域总容量).
+//1246196K->1246220K(1287040K)表示GC前Java堆已使用容量->GC后Java对已使用容量(Java对总容量).
+//0.2398360 secs表示GC所占有时间.
