@@ -10,7 +10,7 @@ public class StopExample2
   //volatile不能保证原子性
   volatile boolean isStart = false;
   //加不加volatile都执行一次
-  //   boolean isStart = false;
+  // boolean isStart = false;
 
 
   public static void main(String[] args) throws Exception

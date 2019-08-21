@@ -1,0 +1,3 @@
+2019-08-18 11:28:48 INFO [com.concurrency.AtomicReferenceTest] 4==count
+2019-08-18 11:50:28 INFO [com.concurrency.AtomicIFUTest] update success 1, 200
+2019-08-18 11:50:28 INFO [com.concurrency.AtomicIFUTest] update failed, 200

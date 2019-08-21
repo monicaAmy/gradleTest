@@ -1,3 +1,4 @@
+
 plugins {
     java
 }
@@ -17,6 +18,10 @@ apply {
     plugin("idea")
 }
 
+
+
+
+
 val kotlin_version: String by extra
 
 repositories {
@@ -35,6 +40,8 @@ dependencies {
     compile("io.netty", "netty", "3.10.5.Final")
     compile("io.netty", "netty-all", "5.0.0.Alpha2")
     compile("com.google.protobuf", "protobuf-java", "2.4.1")
+    compile("log4j", "log4j", "1.2.17")
+    compile("org.slf4j", "slf4j-log4j12", "2.0.0-alpha0")
 }
 
 configure<JavaPluginConvention> {
