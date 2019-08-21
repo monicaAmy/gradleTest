@@ -1,5 +1,6 @@
-package com.concurrency;
+package com.thread.concurrency;
 
+import com.annotation.NotThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;

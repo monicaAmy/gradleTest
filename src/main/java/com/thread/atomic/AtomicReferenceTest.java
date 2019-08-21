@@ -1,4 +1,4 @@
-package com.concurrency;
+package com.thread.atomic;
 
 import lombok.extern.slf4j.Slf4j;
 
