@@ -56,14 +56,38 @@ public class HelloWorld
         System.out.println(helloWorld2.hobby);
     }
 
+    /**
+     * 注释掉之后只会执行静态初始化代码块
+     *
+     * @param args
+     */
     public static void main(String[] args)
     {
 
         // 创建对象
-        HelloWorld hello = new HelloWorld();
+        //HelloWorld hello = new HelloWorld();
         // 调用对象的show方法
-        hello.show();
+        // hello.show();
 
     }
 
+    public enum Coin
+    {
+        A("a"), B("b");
+
+        private String value;
+
+        public String getValue()
+        {
+            return value;
+        }
+
+        //必须要有,默认私有
+        Coin(String value)
+        {
+            System.out.println("rrr");
+            this.value = value;
+        }
+
+    }
 }
