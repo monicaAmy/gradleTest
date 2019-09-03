@@ -42,6 +42,9 @@ dependencies {
     compile("com.google.protobuf", "protobuf-java", "2.4.1")
     compile("log4j", "log4j", "1.2.17")
     compile("org.slf4j", "slf4j-log4j12", "2.0.0-alpha0")
+    compile("org.jsoup", "jsoup", "1.11.3")
+    compile("net.sourceforge.htmlunit", "htmlunit", "2.36.0")
+    compile("org.apache.poi", "poi", "4.1.0")
 }
 
 configure<JavaPluginConvention> {

@@ -4,6 +4,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 
+/**
+ * 读写互斥,不适合读多写少的场景
+ */
 public class UseReentrantReadWriteLock
 {
 
@@ -57,7 +60,6 @@ public class UseReentrantReadWriteLock
 
 //    t3.start();
 //    t4.start();
-
 
   }
 
