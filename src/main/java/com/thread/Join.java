@@ -19,6 +19,7 @@ public class Join
         });
 
         thread.start();
+
         try
         {
             //join主线程等待子线程运行完在运行

@@ -1,0 +1,10 @@
+@startuml
+title 状态模式
+package "State" {
+[AbstractState] -> [State]
+[Context] ---> [State]
+
+}
+
+
+@enduml
