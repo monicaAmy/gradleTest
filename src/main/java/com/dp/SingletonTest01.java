@@ -9,18 +9,16 @@ public class SingletonTest01
     public void test()
     {
         System.out.println("--------------------------------------------------------------------------------------------------------------------");
-        System.out.println(Singleton01.getInstance());
-        System.out.println("Singleton02 ==" + Singleton02.getInstance());
-        System.out.println(Singleton03.getInstance());
-        System.out.println(Singleton04.getInstance());
-        System.out.println(Singleton06.getInstance());
-        System.out.println(Singleton06.getInstance());
-        System.out.println(Singleton07.getInstance());
-        System.out.println(Singleton07.getInstance());
-        System.out.println(Singleton07.getInstance());
-        System.out.println(Singleton07.getInstance());
+
         System.out.println(Singleton08.INSTANCE);
+    }
+
+    public static void main(String[] args)
+    {
+        System.out.println("--------------------------------------------------------------------------------------------------------------------");
+
         System.out.println(Singleton08.INSTANCE);
+
     }
 }
 
@@ -147,7 +145,7 @@ class Singleton04
 class Singleton06
 {
 
-    private static Singleton06 singleton06;
+    private static volatile Singleton06 singleton06;
 
     private Singleton06()
     {

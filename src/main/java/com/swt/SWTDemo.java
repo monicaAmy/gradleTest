@@ -34,6 +34,6 @@ public class SWTDemo
 
     jf.setSize(400,400);
     jf.setVisible(true);
-
+      System.out.println("哈哈哈");
   }
 }
