@@ -1,0 +1,64 @@
+package com.lamdba;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.Supplier;
+import java.util.stream.Collector;
+
+public class MySetCcollector<T> implements Collector<T, Set<T>, Set<T>>
+{
+    @Override
+    public Supplier<Set<T>> supplier()
+    {
+        System.out.println("supplier invoked!");
+        return HashSet<T>::new;
+    }
+
+    @Override
+    public BiConsumer<Set<T>, T> accumulator()
+    {
+        System.out.println("accumulator invoked !");
+        return Set<T>::add;
+    }
+
+    @Override
+    public BinaryOperator<Set<T>> combiner()
+    {
+        System.out.println("combiner invoked !");
+        return (set1, set2) ->
+        {
+            set1.addAll(set2);
+            return set1;
+        };
+    }
+
+    @Override
+    public Function<Set<T>, Set<T>> finisher()
+    {
+        System.out.println("finisher invoked!");
+        return Function.identity();
+    }
+
+    @Override
+    public Set<Characteristics> characteristics()
+    {
+        System.out.println("characteristics invoked !");
+        // IDENTITY_FINISH 强转，所以不会调用finisher转换stream到对象集合
+        // Collector<T, Set<T>, Set<T>> 中间类型和结果类型一致，可以强转
+        return Collections.unmodifiableSet(EnumSet.of(Characteristics.IDENTITY_FINISH, Characteristics.UNORDERED));
+    }
+
+    public static void main(String[] args)
+    {
+        List<String> list = Arrays.asList("nohai", "Hello", "hello", "welcome", "Welcome");
+        Set<String> collect = list.stream().collect(new MySetCcollector<String>());
+
+    }
+}

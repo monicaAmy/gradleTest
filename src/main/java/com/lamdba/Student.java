@@ -16,23 +16,11 @@ public class Student
 
     private int score;
 
-    public String getName()
-    {
-        return name;
-    }
+    private int level;
 
-    public void setName(String name)
+    public Student(String name, int score)
     {
         this.name = name;
-    }
-
-    public int getScore()
-    {
-        return score;
-    }
-
-    public void setScore(int score)
-    {
         this.score = score;
     }
 }

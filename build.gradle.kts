@@ -45,6 +45,7 @@ dependencies {
     compile("org.jsoup", "jsoup", "1.11.3")
     compile("net.sourceforge.htmlunit", "htmlunit", "2.36.0")
     compile("org.apache.poi", "poi", "4.1.0")
+    compile("'joda-time", "'joda-time", "'2.10.6")
 }
 
 configure<JavaPluginConvention> {
