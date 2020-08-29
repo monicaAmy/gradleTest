@@ -18,6 +18,7 @@ public class Main
     public void testMaster() {
 
         System.out.println("提交到master分支。。。");
+        System.out.println("master创建并切换到bug...");
     }
 
 }
