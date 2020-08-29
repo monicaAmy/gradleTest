@@ -13,5 +13,11 @@ public class Main
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));*/
 
     }
+    
+    @Test
+    public void testMaster() {
+
+        System.out.println("提交到master分支。。。");
+    }
 
 }
