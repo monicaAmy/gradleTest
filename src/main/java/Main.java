@@ -18,6 +18,9 @@ public class Main
     public void testMaster() {
 
         System.out.println("提交到master分支。。。");
+        System.out.println("切换到dev....");
     }
+
+
 
 }
