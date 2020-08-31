@@ -15,9 +15,10 @@ public class Main
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));*/
 
     }
-    
+
     @Test
-    public void testMaster() {
+    public void testMaster()
+    {
 
         System.out.println("提交到master分支。。。");
 
@@ -27,6 +28,10 @@ public class Main
 
     }
 
-
+    @Test
+    public void testRebase()
+    {
+        System.out.println("checkout dev...");
+    }
 
 }
