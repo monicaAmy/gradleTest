@@ -29,9 +29,10 @@ public class Main
     }
 
     @Test
-    public void testRebase()
+    public void testDevReabase()
     {
         System.out.println("checkout dev...");
+        System.out.println("dev kaifa ...");
     }
 
 }
