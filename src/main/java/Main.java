@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 public class Main
 {
     public static void main(String[] args)
@@ -13,14 +15,19 @@ public class Main
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));*/
 
     }
-    
+
     @Test
-    public void testMaster() {
+    public void testMaster()
+    {
 
         System.out.println("提交到master分支。。。");
         System.out.println("切换到dev....");
     }
 
-
+    @Test
+    public void testDevReabase()
+    {
+        System.out.println("dev kaifa ...");
+    }
 
 }
